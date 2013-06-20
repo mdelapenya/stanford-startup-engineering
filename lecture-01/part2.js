@@ -11,13 +11,11 @@ while (primes.length < 100) {
 
 	var j = 0;
 
-	console.log(index + " % " + primes[j] + " !== 0 :> " + (index % primes[j] !== 0));
 	while ((index % primes[j] !== 0) && j < primes.length) {
 		j++;
 	}
 
 	if (j >= primes.length) {
-		console.log("Adding " + index + " because it's prime");
 		primes.push(index);
 	}
 }
